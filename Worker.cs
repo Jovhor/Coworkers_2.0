@@ -12,37 +12,85 @@ namespace Coworkers_2._0
         /// <summary>
         /// Номер по списку
         /// </summary>
-        private int ID { get; set; }
+        public int ID 
+        { 
+            get { return ID; } 
+            set { ID = value; } 
+        }
 
         /// <summary>
         /// Время добавления сотрудника 
         /// </summary>
-        private string AddTime { get { return AddTime; } set { AddTime = DateTime.Now.ToString(); } } 
+        private string AddTime 
+        { 
+            get { return AddTime; } 
+            set { AddTime = DateTime.Now.ToString(); } 
+        } 
 
         /// <summary>
         /// ФИО 
         /// </summary>
-        public string FIO { get; set; }
+        public string FIO 
+        { 
+            get { return FIO; } 
+            set { FIO = value; } 
+        }
 
         /// <summary>
         /// Возраст 
         /// </summary>
-        public int Age { get; set; }
+        public int Age 
+        { 
+            get { return Age; } 
+            set { Age = value; } 
+        }
 
         /// <summary>
         /// Рост сотрудника
         /// </summary>
-        public int Height { get; set; }
+        public int Height 
+        { 
+            get { return Height; } 
+            set { Height = value; } 
+        }
 
         /// <summary>
         /// Дата рождения сотрудника
         /// </summary>
-        public DateTime BirthDay { get; set; } 
+
+        public string DayOfBirht
+        {
+            get { return DayOfBirht; }
+            set { DayOfBirht = value; }
+        }
+        public string MonthOfBirht
+        {
+            get { return MonthOfBirht; } 
+            set { MonthOfBirht = value; } 
+        }
+        public string YearOfBirth 
+        {
+            get { return YearOfBirth; }
+            set { YearOfBirth = value; } 
+        }
 
         /// <summary>
-        /// Место рождения (place of birth) 
+        /// Дата рождения сотрудника
         /// </summary>
-        public string PoB { get; set; } 
+
+        private string BirthDay 
+        {
+            get { return $"{DayOfBirht}.{MonthOfBirht}.{YearOfBirth}"; } 
+        }         
+        
+        /// <summary>
+        /// Место рождения 
+        /// </summary>
+        public string PlaceOfBirth 
+        {
+            get { return PlaceOfBirth; }
+            set { PlaceOfBirth = value; }
+        }
 
         public string Print()  // вывод данных о сотруднике
         {
@@ -51,8 +99,8 @@ namespace Coworkers_2._0
                 $"\nФ.И.О.: {FIO} " +
                 $"\nВозраст: {Age} " +
                 $"\nРост: {Height} " +
-                $"\nДата рождения: {BirthDay.ToShortDateString()}" +
-                $"\nМесто рождения: {PoB}";
+                $"\nДата рождения: {BirthDay}" +
+                $"\nМесто рождения: {PlaceOfBirth}";
         }
     }
 }
