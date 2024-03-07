@@ -10,17 +10,64 @@ namespace Coworkers_2._0
     {
         static void Main(string[] args)
         {
-            Worker worker1 = new Worker();
-            worker1.ID = 15;
-            worker1.FIO = "Зубенко Михаил Петрович";
-            worker1.Age = 20;
-            worker1.Height = 190;
-            worker1.BirthDay = "11.02.1999";
-            worker1.PlaceOfBirth = "мамка твоя";
+            //string path = @"data.csv";
 
+            //Repository workersRep = new Repository(path);
 
-            Console.WriteLine(worker1.Print());
+            var student = new Worker();
+            student.Print();
+            //Console.WriteLine(
+            //    "Приветствую. " +
+            //    "\nСегодня я попытааюсь впарить Вам свою домашку. " +
+            //    "\nСегодня у нас в меню:" +
+            //    "\n1.Просмотр всех записей" +
+            //    "\n2.Просмотр одной записи" +
+            //    "\n3.Создание записи" +
+            //    "\n4.Удаление записи" +
+            //    "\n5.Загрузка записей в выбранном диапазоне дат" +
+            //    "\n\nЧто выберете?");
+
+            //while (true)
+            //{
+            //    string choise = Console.ReadLine();
+
+            //    switch (choise)
+            //    {
+            //        case "1":
+            //            Console.WriteLine("Вывожу все записи:");
+            //            workersRep.GetAllWorkers();
+            //            break;
+            //        case "2":
+            //            Console.WriteLine("Введите номер записи:");
+            //            int id = int.Parse(Console.ReadLine());
+            //            Worker worker = workersRep.GetWorkerByID(int id);
+            //            break;
+            //        case "3":
+            //            Console.WriteLine("Введите номер записи:");
+            //            int id = int.Parse(Console.ReadLine());
+            //            workersRep.DeleteWorker(int id);
+            //            break;
+            //        case "4":
+            //            Console.WriteLine("Начнем с номера записи:");
+            //            int id = int.Parse(Console.ReadLine());
+            //            workersRep.AddWorker();
+            //            break;
+            //        case "5":
+            //            Console.WriteLine("Введите первую дату:");
+            //            int dateFrom = int.Parse(Console.ReadLine());
+
+            //            Console.WriteLine("Введите вторую дату:");
+            //            int dateTo = int.Parse(Console.ReadLine());
+
+            //            workersRep.GetWorkersBetweenTwoDates();
+            //            break;
+            //        default:
+            //            Console.WriteLine("Я понимаю только цифры 1,2,3,4 и 5. На остальное не реагирую.");
+            //            break;
+            //    }
+
             Console.ReadKey();
+            
         }
     }
 }
