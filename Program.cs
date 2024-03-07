@@ -15,9 +15,7 @@ namespace Coworkers_2._0
             worker1.FIO = "Зубенко Михаил Петрович";
             worker1.Age = 20;
             worker1.Height = 190;
-            worker1.DayOfBirht = "11";
-            worker1.MonthOfBirht = "2";
-            worker1.YearOfBirth = "1999";
+            worker1.BirthDay = "11.02.1999";
             worker1.PlaceOfBirth = "мамка твоя";
 
 

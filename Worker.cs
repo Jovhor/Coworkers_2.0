@@ -14,8 +14,8 @@ namespace Coworkers_2._0
         /// </summary>
         public int ID 
         { 
-            get { return ID; } 
-            set { ID = value; } 
+            get { return ID; }
+            set { ID = value; }
         }
 
         /// <summary>
@@ -58,31 +58,12 @@ namespace Coworkers_2._0
         /// Дата рождения сотрудника
         /// </summary>
 
-        public string DayOfBirht
+        public string BirthDay 
         {
-            get { return DayOfBirht; }
-            set { DayOfBirht = value; }
-        }
-        public string MonthOfBirht
-        {
-            get { return MonthOfBirht; } 
-            set { MonthOfBirht = value; } 
-        }
-        public string YearOfBirth 
-        {
-            get { return YearOfBirth; }
-            set { YearOfBirth = value; } 
+            get { return BirthDay; }
+            set { BirthDay = value; }
         }
 
-        /// <summary>
-        /// Дата рождения сотрудника
-        /// </summary>
-
-        private string BirthDay 
-        {
-            get { return $"{DayOfBirht}.{MonthOfBirht}.{YearOfBirth}"; } 
-        }         
-        
         /// <summary>
         /// Место рождения 
         /// </summary>
